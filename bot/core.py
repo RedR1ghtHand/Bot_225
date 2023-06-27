@@ -2,9 +2,8 @@ from telebot import *
 from telebot.callback_data import CallbackData
 from db_manager import DB_Manager
 from calculate import calculate_cart
-from _token import TOKEN
-
-bot = telebot.TeleBot(TOKEN)
+from _token import TOK
+bot = telebot.TeleBot(TOK)
 menu_factory = CallbackData('dish_id', prefix='dish')
 mrkp = None
 db = DB_Manager()
